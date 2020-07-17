@@ -11,9 +11,12 @@ class App extends React.Component {
             <Link to="/">Home</Link>
             <br></br>
             <Link to="/intro">소개</Link>
+            <br></br>
+            <Link to="/components">컴포넌트</Link>
           </nav>
           <Route exact={true} path="/" render={() => <h3>Home</h3>} />
           <Route exact={true} path="/intro" render={() => <h3>소개</h3>} />
+          <Route exact={true} path="/components" render={() => <h3>컴포넌트</h3>} />
         </div>
       </Router>
     );
