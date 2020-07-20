@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-
-class BigButton extends Component {
+type ContentState = {
+  text: string
+}
+class BigButton extends Component<{}, ContentState> {
   render() {
     return (
       <div>
