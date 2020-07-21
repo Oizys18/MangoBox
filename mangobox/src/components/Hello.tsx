@@ -2,7 +2,14 @@ import React, { Component } from "react";
 
 class Hello extends Component {
   render() {
-    return <h1>Hello!</h1>;
+    return (
+      <div>
+        <p>
+          Test page with Hello world 
+        </p>
+        <h1>Hello world!</h1>;
+      </div>
+    )
   }
 }
 export default Hello;
