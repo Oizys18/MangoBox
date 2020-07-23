@@ -5,17 +5,22 @@ type ContentState = {
 };
 class BigButton extends Component<{}, ContentState> {
   render() {
-    return <BButton>BigButton</BButton>;
+    return <Button>BigButton</Button>;
   }
 }
 export default BigButton;
 
-const BButton = styled.button`
+const Button = styled.button`
+  margin: 1em;
   border: 1px solid grey;
   border-radius: 15px;
   padding: 10px;
   font-size: 15px;
-  & :active {
-    display: none;
+  &:active{
+    background-color:red;
+    outline:none;
+  }
+  &:focus{
+    outline:none;
   }
 `;
