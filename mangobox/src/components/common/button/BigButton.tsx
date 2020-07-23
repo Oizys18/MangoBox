@@ -1,12 +1,21 @@
 import React, { Component } from "react";
-
-class BigButton extends Component {
+import styled from "styled-components";
+type ContentState = {
+  text: string;
+};
+class BigButton extends Component<{}, ContentState> {
   render() {
-    return (
-      <div>
-        <h1>BigButton</h1>;
-      </div>
-    );
+    return <BButton>BigButton</BButton>;
   }
 }
 export default BigButton;
+
+const BButton = styled.button`
+  border: 1px solid grey;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 15px;
+  & :active {
+    display: none;
+  }
+`;

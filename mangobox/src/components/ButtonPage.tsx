@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import BigButton from "./common/button/BigButton";
 import DefaultButton from "./common/button/DefaultButton";
 import SmallButton from "./common/button/SmallButton";
-
+import styled from "styled-components"
 class ButtonPage extends Component {
   render() {
     return (
-      <div>
+      <Wrapper>
         <h1>ButtonPage</h1>
         <div>
           <BigButton></BigButton>
@@ -17,8 +17,12 @@ class ButtonPage extends Component {
         <div>
           <SmallButton></SmallButton>
         </div>
-      </div>
+      </Wrapper>
     );
   }
 }
 export default ButtonPage;
+
+const Wrapper = styled.div`
+`
+const Container = styled.div``
