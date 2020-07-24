@@ -12,7 +12,7 @@ class ButtonPage extends Component {
           <BigButton></BigButton>
         </div>
         <div>
-          <DefaultButton></DefaultButton>
+          <DefaultButton text="hello"></DefaultButton>
         </div>
         <div>
           <SmallButton></SmallButton>

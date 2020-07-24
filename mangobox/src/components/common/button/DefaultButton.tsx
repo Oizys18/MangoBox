@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-type ContentState = {
+type TextProps = {
   text: string;
 };
-class DefaultButton extends Component<{}, ContentState> {
+
+
+class DefaultButton extends Component<TextProps> {
   render() {
     return (
       <Wrapper>
-        <Button></Button>
+        <Button>{this.props.text}</Button>
       </Wrapper>
     );
   }
