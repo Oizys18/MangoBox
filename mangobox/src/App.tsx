@@ -20,10 +20,10 @@ function App() {
 export default withRouter(App);
 
 const Wrapper = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; */
 `;

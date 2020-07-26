@@ -29,4 +29,3 @@ const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-const Container = styled.div``;
