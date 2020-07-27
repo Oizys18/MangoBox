@@ -7,11 +7,6 @@
 
 ## Design Concept
 
-### Neuromorphism
-
-- UI 디자인
--
-
 ## Development Schedule
 
 ## Work Process
