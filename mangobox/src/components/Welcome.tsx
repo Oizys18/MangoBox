@@ -40,7 +40,6 @@ export default Welcome;
 
 const Wrapper = styled.div`
   /* top:0;
-left:0;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -61,14 +60,3 @@ const Container = styled.div`
   /* box-shadow: 24px 24px 50px #cc8c2b, -24px -24px 50px #ffd241; */
   /* box-shadow: 24px 24px 50px #cc5939, -24px -24px 50px #ff8555; */
 `;
-
-// const Card = styled.div`
-//   justify-content: center;
-//   align-items: center;
-//   display: flex;
-//   width: 58vw;
-//   height: 58vh;
-//   background: linear-gradient(145deg, #e69e31, #ffbb3a);
-//   box-shadow: 24px 24px 50px #cc8c2b, -24px -24px 50px #ffd241;
-//   border-radius: 50px;
-// `;
