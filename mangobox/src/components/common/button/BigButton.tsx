@@ -3,6 +3,7 @@ import styled from "styled-components";
 type ContentState = {
   text: string;
 };
+
 class BigButton extends Component<{}, ContentState> {
   render() {
     return <Button>BigButton</Button>;
