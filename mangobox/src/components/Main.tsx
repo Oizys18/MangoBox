@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import $ from "jquery";
 
 class Main extends Component {
   state = {
     rotateBox: null,
-    mango:null,
+    mango: null,
   };
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
@@ -19,22 +18,38 @@ class Main extends Component {
     let top = e.srcElement.scrollingElement.scrollTop;
     if (top < 700) {
       this.setState({
-        rotateBox: e.srcElement.scrollingElement.scrollTop / 6
-        
+        rotateBox: e.srcElement.scrollingElement.scrollTop / 5,
       });
     }
-    this.setState({mango: e.srcElement.scrollingElement.scrollTop})
-    console.log(e.srcElement.scrollingElement.scrollTop*2);
+    this.setState({ mango: e.srcElement.scrollingElement.scrollTop });
   };
   render() {
     return (
       <MainWrapper>
         <MangoBox style={{ transform: `rotate(-${this.state.rotateBox}deg)` }}>
-          MANGO!🥭
+          MANGO!<span role="img">🥭</span>
         </MangoBox>
-        <Mango style={{ transform: `translate(-${this.state.mango}px) translateY(${this.state.mango}px) rotate(-${this.state.rotateBox}deg)` }}>
-          🥭
+        <Mango
+          style={{
+            transform: `translate(-${this.state.mango}px) translateY(${this.state.mango}px) rotate(-${this.state.rotateBox}deg)`,
+          }}
+        >
+          <span role="img">🥭</span>
         </Mango>
+        <Mango2
+          style={{
+            transform: `translate(-${this.state.mango}px) translateY(${this.state.mango}px) rotate(-${this.state.rotateBox}deg)`,
+          }}
+        >
+          <span role="img">🥭</span>
+        </Mango2>
+        <Mango3
+          style={{
+            transform: `translate(-${this.state.mango}px) translateY(${this.state.mango}px) rotate(-${this.state.rotateBox}deg)`,
+          }}
+        >
+          <span role="img">🥭</span>
+        </Mango3>
         <FirstContainer></FirstContainer>
         <SecondContainer></SecondContainer>
         <ThirdContainer></ThirdContainer>
@@ -87,6 +102,20 @@ const Mango = styled.div`
   position: absolute;
   right: 15vw;
   top: 32vh;
+  font-size: 5rem;
+  z-index: 1;
+`;
+const Mango2 = styled.div`
+  position: absolute;
+  right: 13vw;
+  top: 37vh;
+  font-size: 5rem;
+  z-index: 1;
+`;
+const Mango3 = styled.div`
+  position: absolute;
+  right: 18vw;
+  top: 36vh;
   font-size: 5rem;
   z-index: 1;
 `;
